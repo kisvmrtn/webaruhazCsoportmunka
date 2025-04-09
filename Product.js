@@ -33,8 +33,12 @@ export default class Product {
     }
     add() {
         this.addBtn0.addEventListener("click", () => {
-            console.log(this.#productData)
+            const addEvent = new CustomEvent("add", {
+                detail: this.#productData,
+            });
+            window.dispatchEvent(addEvent);
         })
     }
+
 
 }
