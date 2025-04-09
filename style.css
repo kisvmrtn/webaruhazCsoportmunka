@@ -1,0 +1,17 @@
+.sidebar {
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+.sidebar {
+    gap: 15px;
+}
