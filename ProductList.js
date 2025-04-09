@@ -3,31 +3,36 @@ export const products = [
         id: 1,
         name: 'MacBook Air 13" M4 Magyar 2025 éjfekete',
         price: 499990,
-        img: "images/macbook.webp"
+        img: "images/macbook.webp",
+        title: "Laptop"
     },
     {
         id: 2,
         name: "iPhone 16 128GB rózsaszín",
         price: 379990,
-        img: "images/TELEFON.webp"
+        img: "images/TELEFON.webp",
+        title: "Smartphone"
     },
     {
         id: 3,
         name: "OnePlus Pad Go LTE 8GB / 128GB, zöld",
         price: 89990,
-        img: "images/TABLET.webp"
+        img: "images/TABLET.webp",
+        title: "Smartphone"
     },
     {
         id: 4,
         name: '65" Samsung The Frame QE65LS03D',
         price: 449990,
-        img: "images/TV.webp"
+        img: "images/TV.webp",
+        title: "TV"
     },
     {
         id: 5,
         name: "Apple AirPods 4 (aktív zajkioltással)",
         price: 84990,
-        img: "images/FULES.webp"
+        img: "images/FULES.webp",
+        title: "Earphone"
     }
 ];
 
@@ -45,10 +50,9 @@ export default class productList {
                         <div class="card h-100 product-card border-primary">
                             <div class="position-relative">
                                 <img src="${products[i].img}" class="card-img-top" height="300">
-                                <span class="position-absolute top-0 end-0 m-2 badge bg-accent">Featured</span>
                             </div>
                             <div class="card-body p-3">
-                                <p class="text-muted small">Smartphones</p>
+                                <p class="text-muted small">${products[i].title}</p>
                                 <h5 class="card-title">${products[i].name}</h5>
                                 <p class="fw-bold fs-4">${products[i].price} Ft</p>
                             </div>
