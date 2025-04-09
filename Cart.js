@@ -14,9 +14,7 @@ export default class Cart {
     addEvent() {
         window.addEventListener("add", (event) => {
             this.#list.push(event.detail);
-            console.log(this.#list)
             this.counter++
-            console.log(this.counter)
             this.shopIcon.innerHTML = this.counter
         });
     }
