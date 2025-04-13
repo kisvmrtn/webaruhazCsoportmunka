@@ -1,310 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstore</title>
-    <meta name="description"
-        content="Your destination for premium tech devices with exceptional quality and innovative features." />
+    <meta
+      name="description"
+      content="Your destination for premium tech devices with exceptional quality and innovative features."
+    />
     <meta name="author" content="TechZone" />
 
     <meta property="og:title" content="TechZone - Premium Tech Devices" />
-    <meta property="og:description"
-        content="Your destination for premium tech devices with exceptional quality and innovative features." />
+    <meta
+      property="og:description"
+      content="Your destination for premium tech devices with exceptional quality and innovative features."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta
+      property="og:image"
+      content="https://lovable.dev/opengraph-image-p98pqg.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@techzone" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta
+      name="twitter:image"
+      content="https://lovable.dev/opengraph-image-p98pqg.png"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header
+      class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="/">Webstore</a>
 
-    <header class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="/">Webstore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="ms-auto">
-                    <a href="#" class="btn btn-outline-dark position-relative shopCart">
-                        <i class="bi bi-cart counter"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="ms-auto">
+            <a href="#" class="btn btn-outline-dark position-relative shopCart">
+              <i class="bi bi-cart counter"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </header>
-    <div class="sidebar">
-
-    </div>
+    <div class="sidebar"></div>
 
     <main>
-        <section class="bg-primary text-white py-5 py-md-7">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb-5 mb-md-0 fade-in">
-                        <h1 class="display-4 fw-bold mb-4">
-                            Discover the Future <br>
-                            <span class="text-info">of Technology</span>
-                        </h1>
-                        <p class="lead text-light mb-4">
-                            Experience cutting-edge devices engineered for performance,
-                            style, and innovation.
-                        </p>
-                        <div class="d-flex flex-wrap gap-3">
-                            <a href="/products" class="btn btn-info btn-lg">Shop Now</a>
-                            <a href="/about" class="btn btn-outline-light btn-lg">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center">
-
-                    </div>
-                </div>
+      <section class="bg-primary text-white py-5 py-md-7">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-5 mb-md-0 fade-in">
+              <h1 class="display-4 fw-bold mb-4">
+                Discover the Future <br />
+                <span class="text-info">of Technology</span>
+              </h1>
+              <p class="lead text-light mb-4">
+                Experience cutting-edge devices engineered for performance,
+                style, and innovation.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="/products" class="btn btn-info btn-lg">Shop Now</a>
+                <a href="/about" class="btn btn-outline-light btn-lg"
+                  >Learn More</a
+                >
+              </div>
             </div>
-        </section>
+            <div class="col-md-6 text-center"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Featured Products Section -->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold text-primary mb-3">Featured Products</h2>
-                    <p class="text-muted mx-auto" style="max-width: 600px;">
-                        Explore our collection of premium devices designed to enhance your digital experience.
-                    </p>
-                </div>
+      <!-- Featured Products Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary mb-3">Featured Products</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px">
+              Explore our collection of premium devices designed to enhance your
+              digital experience.
+            </p>
+          </div>
 
-                <div class="row g-4 itemList">
-                    <!-- products -->
-                </div>
+          <div class="row g-4 itemList">
+            <!-- products -->
+          </div>
 
-                <div class="text-center mt-5">
-                    <a href="#" class="text-accent fw-medium text-decoration-underline">View All Products</a>
+          <div class="text-center mt-5">
+            <a href="#" class="text-accent fw-medium text-decoration-underline"
+              >View All Products</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary mb-3">Why Choose Our Devices</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px">
+              We design our products with cutting-edge features that enhance
+              your digital experience.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Feature 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 feature-card">
+                <div class="card-body">
+                  <div
+                    class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4"
+                  >
+                    <i class="bi bi-cpu text-primary fs-4"></i>
+                  </div>
+                  <h5 class="card-title">Powerful Performance</h5>
+                  <p class="card-text text-muted">
+                    Our devices are equipped with the latest processors and
+                    technologies for maximum performance.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Features Section -->
-        <section class="py-5 bg-white">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold text-primary mb-3">Why Choose Our Devices</h2>
-                    <p class="text-muted mx-auto" style="max-width: 600px;">
-                        We design our products with cutting-edge features that enhance your digital experience.
-                    </p>
+            <!-- Feature 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 feature-card">
+                <div class="card-body">
+                  <div
+                    class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4"
+                  >
+                    <i class="bi bi-battery-full text-primary fs-4"></i>
+                  </div>
+                  <h5 class="card-title">All-Day Battery</h5>
+                  <p class="card-text text-muted">
+                    Extended battery life to keep your devices running
+                    throughout your busy day.
+                  </p>
                 </div>
-
-                <div class="row g-4">
-                    <!-- Feature 1 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card h-100 feature-card">
-                            <div class="card-body">
-                                <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4">
-                                    <i class="bi bi-cpu text-primary fs-4"></i>
-                                </div>
-                                <h5 class="card-title">Powerful Performance</h5>
-                                <p class="card-text text-muted">Our devices are equipped with the latest processors and
-                                    technologies for maximum performance.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card h-100 feature-card">
-                            <div class="card-body">
-                                <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4">
-                                    <i class="bi bi-battery-full text-primary fs-4"></i>
-                                </div>
-                                <h5 class="card-title">All-Day Battery</h5>
-                                <p class="card-text text-muted">Extended battery life to keep your devices running
-                                    throughout your busy day.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card h-100 feature-card">
-                            <div class="card-body">
-                                <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4">
-                                    <i class="bi bi-shield-check text-primary fs-4"></i>
-                                </div>
-                                <h5 class="card-title">Enhanced Security</h5>
-                                <p class="card-text text-muted">Advanced security features to protect your data and
-                                    privacy at all times.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card h-100 feature-card">
-                            <div class="card-body">
-                                <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4">
-                                    <i class="bi bi-lightning-charge text-primary fs-4"></i>
-                                </div>
-                                <h5 class="card-title">Fast Charging</h5>
-                                <p class="card-text text-muted">Get back to full power quickly with our rapid charging
-                                    technologies.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
 
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="/placeholder.svg" alt="Product Specifications" class="img-fluid rounded-3 shadow">
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold text-primary mb-4">Technical Excellence</h2>
-                        <p class="lead text-muted mb-4">Our devices are engineered to deliver unmatched performance with
-                            industry-leading specifications.</p>
-
-                        <div class="accordion" id="specsAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne">
-                                        Processing Power
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    data-bs-parent="#specsAccordion">
-                                    <div class="accordion-body">
-                                        Equipped with the latest generation processors, our devices handle even the most
-                                        demanding applications with ease.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo">
-                                        Display Technology
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#specsAccordion">
-                                    <div class="accordion-body">
-                                        Experience vibrant colors and sharp details with our high-resolution displays
-                                        featuring advanced color accuracy technology.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree">
-                                        Camera Systems
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#specsAccordion">
-                                    <div class="accordion-body">
-                                        Capture stunning photos and videos with our professional-grade camera systems
-                                        designed for both amateur and professional use.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Feature 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 feature-card">
+                <div class="card-body">
+                  <div
+                    class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4"
+                  >
+                    <i class="bi bi-shield-check text-primary fs-4"></i>
+                  </div>
+                  <h5 class="card-title">Enhanced Security</h5>
+                  <p class="card-text text-muted">
+                    Advanced security features to protect your data and privacy
+                    at all times.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Call to Action -->
-        <section class="py-5 bg-primary text-white">
-            <div class="container text-center">
-                <h2 class="fw-bold mb-3">Ready to Experience the Future?</h2>
-                <p class="mx-auto mb-4" style="max-width: 600px;">
-                    Join thousands of satisfied customers who have upgraded their tech experience with our cutting-edge
-                    devices.
-                </p>
-                <div class="d-flex justify-content-center flex-wrap gap-3">
-                    <a href="/products" class="btn btn-light btn-lg">Shop Now</a>
-                    <a href="/about" class="btn btn-outline-light btn-lg">Learn More</a>
+            <!-- Feature 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 feature-card">
+                <div class="card-body">
+                  <div
+                    class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mb-4"
+                  >
+                    <i class="bi bi-lightning-charge text-primary fs-4"></i>
+                  </div>
+                  <h5 class="card-title">Fast Charging</h5>
+                  <p class="card-text text-muted">
+                    Get back to full power quickly with our rapid charging
+                    technologies.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img
+                src="/placeholder.svg"
+                alt="Product Specifications"
+                class="img-fluid rounded-3 shadow"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h2 class="fw-bold text-primary mb-4">Technical Excellence</h2>
+              <p class="lead text-muted mb-4">
+                Our devices are engineered to deliver unmatched performance with
+                industry-leading specifications.
+              </p>
+
+              <div class="accordion" id="specsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                    >
+                      Processing Power
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#specsAccordion"
+                  >
+                    <div class="accordion-body">
+                      Equipped with the latest generation processors, our
+                      devices handle even the most demanding applications with
+                      ease.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                    >
+                      Display Technology
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#specsAccordion"
+                  >
+                    <div class="accordion-body">
+                      Experience vibrant colors and sharp details with our
+                      high-resolution displays featuring advanced color accuracy
+                      technology.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                    >
+                      Camera Systems
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#specsAccordion"
+                  >
+                    <div class="accordion-body">
+                      Capture stunning photos and videos with our
+                      professional-grade camera systems designed for both
+                      amateur and professional use.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-3">Ready to Experience the Future?</h2>
+          <p class="mx-auto mb-4" style="max-width: 600px">
+            Join thousands of satisfied customers who have upgraded their tech
+            experience with our cutting-edge devices.
+          </p>
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a href="/products" class="btn btn-light btn-lg">Shop Now</a>
+            <a href="/about" class="btn btn-outline-light btn-lg">Learn More</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3">TechZone</h5>
-                    <p class="text-white">
-                        Your destination for premium tech devices with exceptional quality and innovative features.
-                    </p>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">TechZone</h5>
+            <p class="text-white">
+              Your destination for premium tech devices with exceptional quality
+              and innovative features.
+            </p>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3">Products</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="/phones" class="text-white">Smartphones</a></li>
-                        <li class="mb-2"><a href="/laptops" class="text-white">Laptops</a></li>
-                        <li class="mb-2"><a href="/tablets" class="text-white">Tablets</a></li>
-                        <li class="mb-2"><a href="/audio" class="text-white">Audio</a></li>
-                        <li class="mb-2"><a href="/accessories" class="text-white">Accessories</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">Products</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/phones" class="text-white">Smartphones</a>
+              </li>
+              <li class="mb-2">
+                <a href="/laptops" class="text-white">Laptops</a>
+              </li>
+              <li class="mb-2">
+                <a href="/tablets" class="text-white">Tablets</a>
+              </li>
+              <li class="mb-2">
+                <a href="/audio" class="text-white">Audio</a>
+              </li>
+              <li class="mb-2">
+                <a href="/accessories" class="text-white">Accessories</a>
+              </li>
+            </ul>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3">Support</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="/contact" class="text-white">Contact Us</a></li>
-                        <li class="mb-2"><a href="/faq" class="text-white">FAQ</a></li>
-                        <li class="mb-2"><a href="/warranty" class="text-white">Warranty</a></li>
-                        <li class="mb-2"><a href="/returns" class="text-white">Returns &
-                                Exchanges</a></li>
-                        <li class="mb-2"><a href="/shipping" class="text-white">Shipping Info</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">Support</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/contact" class="text-white">Contact Us</a>
+              </li>
+              <li class="mb-2"><a href="/faq" class="text-white">FAQ</a></li>
+              <li class="mb-2">
+                <a href="/warranty" class="text-white">Warranty</a>
+              </li>
+              <li class="mb-2">
+                <a href="/returns" class="text-white">Returns & Exchanges</a>
+              </li>
+              <li class="mb-2">
+                <a href="/shipping" class="text-white">Shipping Info</a>
+              </li>
+            </ul>
+          </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3">Company</h5>
-                    <ul class="list-unstyled ">
-                        <li class="mb-2"><a href="/about" class="text-white">About Us</a></li>
-                        <li class="mb-2"><a href="/careers" class="text-white">Careers</a></li>
-                        <li class="mb-2"><a href="/blog" class="text-white">Blog</a></li>
-                        <li class="mb-2"><a href="/press" class="text-white">Press</a></li>
-                        <li class="mb-2"><a href="/privacy" class="text-white">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-top border-secondary mt-4 pt-4 text-center text-muted small">
-                <p>©
-                    <script>document.write(new Date().getFullYear())</script> TechZone. All rights reserved.
-                </p>
-            </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">Company</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/about" class="text-white">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="/careers" class="text-white">Careers</a>
+              </li>
+              <li class="mb-2"><a href="/blog" class="text-white">Blog</a></li>
+              <li class="mb-2">
+                <a href="/press" class="text-white">Press</a>
+              </li>
+              <li class="mb-2">
+                <a href="/privacy" class="text-white">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div
+          class="border-top border-secondary mt-4 pt-4 text-center text-muted small"
+        >
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            TechZone. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

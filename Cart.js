@@ -11,6 +11,7 @@ export default class Cart {
     this.shopIcon = document.querySelector(".bi");
     this.addEvent();
     this.show();
+    this.remove();
   }
   addEvent() {
     window.addEventListener("add", (event) => {
@@ -34,9 +35,29 @@ export default class Cart {
         default:
           sidebar.style.display = "flex";
       }
-      for (let i = 0; i < this.#list.length; i++) {
-        console.log(this.#list);
-        new CartElement(this.#list[i], sidebar);
+      this.renderSidebar(sidebar);
+    });
+  }
+
+  renderSidebar(sidebar) {
+    sidebar.innerHTML = "";
+    for (let i = 0; i < this.#list.length; i++) {
+      new CartElement(this.#list[i], sidebar, i);
+    }
+  }
+
+  remove() {
+    window.addEventListener("remove", (event) => {
+      const index = event.detail;
+      console.log("Törlendő index:", index);
+      this.#list.splice(index, 1);
+      console.log("Új lista:", this.#list);
+      this.counter--;
+      this.shopIcon.innerHTML = this.counter;
+
+      const sidebar = document.querySelector(".sidebar");
+      if (sidebar.style.display === "flex") {
+        this.renderSidebar(sidebar);
       }
     });
   }
